@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'envoi de courrier</title>
+</head>
+<body>
+  <form action="/sendmail" method="post">
+    <label for="to">Destinataire :</label>
+    <input type="email" id="to" name="to" required><br>
+
+    <label for="subject">Sujet :</label>
+    <input type="text" id="subject" name="subject" required><br>
+
+    <label for="text">Texte :</label><br>
+    <textarea id="text" name="text" rows="4" required></textarea><br>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>
