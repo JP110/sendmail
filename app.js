@@ -35,7 +35,6 @@ app.post('/sendmail', async (req, res) => {
         },
         name: "dufullstack.fr",
      };
-     console.log(config.auth.pass)
      const transporter = nodemailer.createTransport(config)
      const info =   await transporter.sendMail({ from:"buisson@n7.fr", to: to , subject, text })
 
